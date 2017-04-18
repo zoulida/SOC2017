@@ -29,6 +29,7 @@ public class ObjectSaver{
     Customer obj33 = (Customer)in.readObject();
     System.out.println("obj33:"+obj33);
     System.out.println("obj33==obj3:"+(obj33==obj3));
+    //System.out.println("obj33.equals()obj3:"+(obj33.equals(obj3)));
     
     int var= in.readInt();
     System.out.println("var:"+var);
@@ -38,7 +39,8 @@ public class ObjectSaver{
 }
 
 class Customer implements Serializable{  
-  private String name;
+  
+private String name;
   private int age;
   
   public Customer(String name,int age){
@@ -50,8 +52,4 @@ class Customer implements Serializable{
 }
 
 
-/****************************************************
- * 作者：孙卫琴                                     *
- * 来源：<<Java网络编程精解>>                       *
- * 技术支持网址：www.javathinker.org                *
- ***************************************************/
+
