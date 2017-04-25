@@ -1,0 +1,12 @@
+package com;
+
+/**
+ * ≤‚ ‘µƒwebservice
+ */
+public class MyService {
+	
+	public String sayHello (String name){
+		return name+"Àµ¡À:hello!";
+	}
+	
+}

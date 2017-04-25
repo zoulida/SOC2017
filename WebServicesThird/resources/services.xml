@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- This file was auto-generated from WSDL --><!-- by the Apache Axis2 version: 1.7.4  Built on : Oct 21, 2016 (10:47:34 BST) --><serviceGroup>
+    <service name="MyService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="com.MyServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.MyServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="sayHello" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://com">
+            <actionMapping>urn:sayHello</actionMapping>
+            <outputActionMapping>urn:sayHelloResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>
