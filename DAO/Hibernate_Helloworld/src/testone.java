@@ -10,22 +10,22 @@ import org.hibernate.cfg.Configuration;
 public class testone {  
       
     //����  
-    public static void all()  
-    {  
-        Query q = session.createQuery("select c.id,c.username from TestDb as c");  
-          
-        List l = q.list();  
-        for(int i=0;i<l.size();i++)  
-        {  
-            //TestDb user = (TestDb)l.get(i);  
-            //System.out.println(user.getUsername());  
-  
-              Object[] row = (Object[])l.get(i);;  
-              Long id = (Long)row[0];  
-              String name = (String)row[1];    
-              System.out.println(id+" "+name);  
-        }  
-    }  
+//    public static void all()  
+//    {  
+//        Query q = session.createQuery("select c.id,c.username from TestDb as c");  
+//          
+//        List l = q.list();  
+//        for(int i=0;i<l.size();i++)  
+//        {  
+//            //TestDb user = (TestDb)l.get(i);  
+//            //System.out.println(user.getUsername());  
+//  
+//              Object[] row = (Object[])l.get(i);;  
+//              Long id = (Long)row[0];  
+//              String name = (String)row[1];    
+//              System.out.println(id+" "+name);  
+//        }  
+//    }  
       
     //��ȡ  
     public static void load()  
@@ -74,6 +74,8 @@ public class testone {
         init(); 
         //insert();
         update();  
+
         close();  
+        
     }  
 }  
