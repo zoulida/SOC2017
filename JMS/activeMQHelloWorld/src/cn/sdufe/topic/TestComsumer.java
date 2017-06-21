@@ -24,7 +24,7 @@ public class TestComsumer {
         
         
         //创建一个Topic
-        Topic topic= new ActiveMQTopic("testTopic");
+        Topic topic= new ActiveMQTopic("zhangsan");
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         
         //注册消费者1

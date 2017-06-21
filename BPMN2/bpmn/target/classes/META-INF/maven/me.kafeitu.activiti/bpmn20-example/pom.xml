@@ -130,7 +130,7 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>1.3.172</version>
-			<scope>test</scope>
+			
 		</dependency>
 
 		<!-- 单元测试-Junit -->
